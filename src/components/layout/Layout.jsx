@@ -10,6 +10,7 @@ import {
 import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
 import News from "../news/News";
+import Login from "../login/Login";
 
 function Layout() {
     return (
@@ -27,13 +28,17 @@ function Layout() {
                         <NavLink to="/news" className="nav-link">
                             News
                         </NavLink>
+                        <NavLink to="/login" className="nav-link">
+                            Login
+                        </NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Container>
+            <Container className="mt-5">
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/news" component={News} />
+                    <Route path="/login" component={Login} />
                 </Switch>
             </Container>
         </Router>
