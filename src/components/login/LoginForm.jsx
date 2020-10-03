@@ -25,13 +25,13 @@ export default function LoginForm(){
             <Form.Group>
                 <Form.Label>Username</Form.Label>
                 <Form.Control name='username' placeholder='Username' ref={register} />
-                {errors.username && <ErrorMessage>{errors.username.message}</ErrorMessage>}
+                {errors.username ? <ErrorMessage>{errors.username.message}</ErrorMessage> : null}
             </Form.Group>
 
             <Form.Group>
                 <Form.Label>Password</Form.Label>
                 <Form.Control type='password' name='password' placeholder='Password' ref={register} />
-                {errors.password && <ErrorMessage>{errors.password.message}</ErrorMessage>}
+                {errors.password ? <ErrorMessage>{errors.password.message}</ErrorMessage> : null}
             </Form.Group>
 
             <Button className='bg-info' type='submit'>Login</Button>
