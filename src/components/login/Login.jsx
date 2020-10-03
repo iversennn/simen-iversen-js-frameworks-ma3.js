@@ -1,14 +1,12 @@
-import React from "react";
-import Heading from "../layout/Heading";
-import LoginForm from "./LoginForm";
+import React from 'react';
+import Heading from '../layout/Heading';
+import LoginForm from './LoginForm';
 
-export function Login(){
+export default function Login(){
     return(
         <>
-            <Heading title="Login"/>
+            <Heading title='Login'/>
             <LoginForm/>
         </>
     )
 }
-
-export default Login;

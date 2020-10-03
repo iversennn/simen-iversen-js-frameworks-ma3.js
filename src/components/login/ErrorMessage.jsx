@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
-function ErrorMessage({ children }) {
+export default function ErrorMessage({ children }) {
     return (
-        <div className="error text-danger ml-2 mt-1" >{ children }</div>
+        <div className='error text-danger ml-2 mt-1' >{ children }</div>
     );
 }
-
-export default ErrorMessage;

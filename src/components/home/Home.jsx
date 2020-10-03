@@ -1,14 +1,12 @@
-import React from "react";
-import Heading from "../layout/Heading";
-import HomeContent from "./HomeContent";
+import React from 'react';
+import Heading from '../layout/Heading';
+import HomeContent from './HomeContent';
 
-export function Home(){
+export default function Home(){
     return(
         <>
-            <Heading title="Home"/>
+            <Heading title='Home'/>
             <HomeContent />
         </>
     )
 }
-
-export default Home;
